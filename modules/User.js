@@ -68,13 +68,14 @@ function noorUserCollection() {
         ]
     });
     console.log(dana)
-    // dana.save();
+    dana.save();
 
     //  to actually save them >> save()
-    // noor.save();
+    noor.save();
 }
+noorUserCollection();
 /*********************** */
-// http://localhost:3001/cat?name=razan
+// http://localhost:3001/books?email=noor.hajbi@gmail.com
 function usersHandler(req, res) {
     const { email } = req.query;
     userModel.find({ email: email }, function (err, userData) {
@@ -83,10 +84,6 @@ function usersHandler(req, res) {
         else
             res.send(userData);
     })
-    // userData[0].books.push({ name, status });
-    // userData[0].save();
-    // res.send(userData);
-
 }
 
 module.exports = usersHandler;
