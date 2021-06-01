@@ -68,10 +68,10 @@ function noorUserCollection() {
         ]
     });
     console.log(dana)
-    dana.save();
+    // dana.save();
 
     //  to actually save them >> save()
-    noor.save();
+    // noor.save();
 }
 noorUserCollection();
 /*********************** */

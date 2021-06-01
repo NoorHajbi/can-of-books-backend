@@ -25,14 +25,14 @@ React, JavaScript
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 [Class11 Link](https://github.com/LTUC/amman-301d20-react/tree/master/class-11)
 
-Lab 12: 
+Lab 13: 
 
-Name of feature:  Store user data in backend
+Name of feature:  create and delete
 
 Estimate of time needed to complete: 2 hours
 
 Start time: 2:00pm
 
-Finish time: 11:00 pm
+Finish time: 3:30 pm
 
-Actual time needed to complete: 4 hours
+Actual time needed to complete: 1 and half hour
