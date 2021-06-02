@@ -15,8 +15,8 @@ app.use(cors());
 const PORT = process.env.PORT;
 
 //modules
-const {userModel} = require('./modules/User');
-const {booksModel} = require('./modules/User');
+const { userModel } = require('./modules/User');
+const { booksModel } = require('./modules/User');
 
 // userModel =userModel.userModel
 app.use(express.json());
@@ -104,7 +104,7 @@ async function createBooks(request, response) {
     console.log(request.body);
     const { email, bookName, bookDescription, bookStatus } = request.body;
     userModel.find({ email: email }, async (error, data) => {
-        console.log('datahhhhhhhhhhhhhhh',  data[0].books);
+        console.log('datahhhhhhhhhhhhhhh', data[0].books);
         data[0].books.push({
             name: bookName,
             description: bookDescription,
@@ -141,8 +141,27 @@ function deleteBooksForEmail(req, res) {
         res.send(data[0].books);
     });
 }
-/**************************/
 
+app.put('/books/:index', updateBooksHandler);
+function updateBooksHandler(req, res) {
+    console.log(req.body);
+    console.log(req.params.index);
+    const { email, bookName, bookDescription, bookStatus } = req.body;
+    const index = Number(req.params.index);
+    userModel.findOne({ email: email }, (error, data) => {
+        console.log(data);
+        data.books.splice(index, 1, {
+            name: bookName,
+            description: bookDescription,
+            status: bookStatus
+        })
+
+        data.save();
+        console.log(data)
+        res.send(data.books)
+    })
+
+}
 app.listen(PORT, () => {
     console.log(`Listening on PORT ${PORT}`)
 })
