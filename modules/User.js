@@ -73,7 +73,7 @@ function noorUserCollection() {
     //  to actually save them >> save()
     // noor.save();
 }
-noorUserCollection();
+// noorUserCollection();
 /*********************** */
 // http://localhost:3001/books?email=noor.hajbi@gmail.com
 function usersHandler(req, res) {
