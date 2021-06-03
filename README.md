@@ -27,12 +27,12 @@ React, JavaScript
 
 Lab 13: 
 
-Name of feature:  create and delete
+Name of feature:  create and delete in front-end
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 2:00pm
+Start time: 8:00pm
 
-Finish time: 3:30 pm
+Finish time: 3:00 pm
 
-Actual time needed to complete: 1 and half hour
+Actual time needed to complete: 6 hours or more
