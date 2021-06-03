@@ -25,14 +25,14 @@ React, JavaScript
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 [Class11 Link](https://github.com/LTUC/amman-301d20-react/tree/master/class-11)
 
-Lab 13: 
+Lab 14: 
 
-Name of feature:  create and delete in front-end
+Name of feature:  Add update to backend
 
 Estimate of time needed to complete: 2 hours
 
-Start time: 8:00pm
+Start time: 3:00pm
 
-Finish time: 3:00 pm
+Finish time: 4:00 pm
 
-Actual time needed to complete: 6 hours or more
+Actual time needed to complete: 1 hour
